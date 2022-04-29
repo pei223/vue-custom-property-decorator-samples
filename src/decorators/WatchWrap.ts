@@ -34,7 +34,6 @@ export function TwiceCallWatch(
         watch: {
             // Set watch function
           [watchVar]: function () {
-          console.log((this as any)[getCallbackName(methodName)])
             ;(this as any)[getCallbackName(methodName)]()
           },
         },
